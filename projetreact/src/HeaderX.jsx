@@ -1,7 +1,7 @@
 import React from "react";
 
-function Header(){
+function HeaderX(){
     return <h1>Welcome to my site</h1>
 }
 
-export default Header;
+export default HeaderX;

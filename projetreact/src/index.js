@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Header from './Header';
-import User from './User';
+import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode></React.StrictMode>
-  <>
-  <User name="John" expertise="Dev" />
-  <User name="Marc" expertise="DevOps" />
-  <User name="Bob" expertise="Engineer" />
-  </>
+
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
  
 );
 

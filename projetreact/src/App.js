@@ -1,12 +1,12 @@
 import React from "react";
-// , { useState, useEffect }
 import "./App.css";
 import Header from "./Components/Header";
-import Counter from "./Components/Counter";
+// import Counter from "./Components/Counter";
 import "./Counter.css";
 // import Test from "./Test";
 import Home from "./Components/Home";
 import About from "./Components/About";
+import Error from "./Components/Errorpage";
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -16,10 +16,28 @@ function App() {
     // }
     return (
         <>
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-        </Routes>
+            <Routes>
+                <Route path="/" element={
+                    <>
+                        <Header />
+                        <Home />
+                    </>
+                } />
+
+                <Route path="/about" element={
+                    <>
+                        <Header />
+                        <About />
+                    </>
+                } />
+
+                <Route path="*" element={
+                    <>
+                        <Error />
+                    </>
+                } />
+
+            </Routes>
             {/* <div className="main">
                 <Header />
                 <Counter />

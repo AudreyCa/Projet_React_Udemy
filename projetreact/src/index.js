@@ -1,20 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import App from './App';
-import Calcul from './Calcul'
-import "./Calcul.css";
-import { BrowserRouter } from 'react-router-dom';
+// import Calcul from './Calcul'
+// import "./Calcul.css";
+// import { BrowserRouter } from 'react-router-dom';
+import App2 from './App2';
+import "./App2.css";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode></React.StrictMode>
 
-  <BrowserRouter>
-    {/* <App /> */}
-    <Calcul />
-  </BrowserRouter>
- 
+  // <BrowserRouter>
+  //   {/* <App /> */}
+  //   {/* <Calcul /> */}
+  // </BrowserRouter>
+  
+  <>
+    <App2 />
+  </>
 );
 
 
